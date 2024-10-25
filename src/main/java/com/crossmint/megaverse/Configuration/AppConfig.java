@@ -1,5 +1,6 @@
 package com.crossmint.megaverse.Configuration;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.annotation.EnableRetry;
@@ -35,5 +36,6 @@ public class AppConfig {
 
         return retryTemplate;
     }
+
 }
 

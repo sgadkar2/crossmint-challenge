@@ -1,6 +1,7 @@
 package com.crossmint.megaverse.Service;
 
-public interface CreateMegaverse {
+public interface MegaverseService {
 
     void createMegaverse();
+
 }

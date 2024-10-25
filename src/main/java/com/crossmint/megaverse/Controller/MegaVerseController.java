@@ -1,23 +1,21 @@
 package com.crossmint.megaverse.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.crossmint.megaverse.Service.CreateMegaverse;
+import com.crossmint.megaverse.Service.MegaverseService;
+
 
 @RestController
 public class MegaVerseController {
 
     @Autowired
-    private CreateMegaverse createMegaverse;
+    private MegaverseService megaverseService;
 
     @PostMapping("/create-megaverse")
-    public ResponseEntity<String> createMegaVerse() {
+    public void createMegaVerse() {
 
-        createMegaverse.createMegaverse();
-
-        return ResponseEntity.ok("MegaVerse created successfully");
+        megaverseService.createMegaverse();
     }
 }
