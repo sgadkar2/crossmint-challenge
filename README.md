@@ -14,5 +14,5 @@ This is a simple Spring Boot application that creates a megaverse based on the g
 
 Note: The application is configured by default to run on port 8080. You can change the port in the `application.properties` file.
 
-## Important Information: The main logic is in the `MegaverseServiceImpl` and `MegaverserApiClientImpl` class in ServiceImpl package. The configuration for the retry mechanism is present in the `AppConfig` class in Configuration package
+## Important Information: The main logic is in the `MegaverseServiceImpl` and `MegaverseApiClientImpl` class in ServiceImpl package. The configuration for the retry mechanism is present in the `AppConfig` class in Configuration package
 
